@@ -1,8 +1,13 @@
 //Business Logicus
 var userInput;
+var output;
 
 var pingPonger = function(input) {
-  return input;
+  output = 0;
+  for (var i = 1; i <= input; i++) {
+    output = output + i + ", "
+  }
+  return output;
 };
 
 //User Interface Logicus
