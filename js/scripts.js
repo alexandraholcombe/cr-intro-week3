@@ -27,16 +27,11 @@ var pingPonger = function(input) {
     };
   };
   $.each(outputItems, function(i, val){
-    if (val === "pong") {
-      $("<li>").text(val).addClass("ping-pong").appendTo("#output");
-    } else if (val === "ping"){
-      $("<li>").text(val).addClass("ping-pong").appendTo("#output");
-    } else if (val === "ping-pong"){
-      $("<li>").text(val).addClass("ping-pong").appendTo("#output");
-    } else {
-      $("<li>").text(val).appendTo("#output");
-    };
+    $("<li>").text(val).appendTo("#output");
   })
+  $("li:contains('ping')").addClass("ping-pong");
+  $("li:contains('pong')").addClass("ping-pong");
+  $("li:contains('ping-pong')").addClass("ping-pong");
 };
 
 //User Interface Logicus
