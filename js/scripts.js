@@ -9,15 +9,16 @@ var pingPonger = function(input) {
   for (var i = 1; i <= input; i++) {
     if (i % 15 === 0) {
       output = pingPongs[2]
-      outputArray.push("<li>" + output + "</li>");
+      // outputArray.push("<li>" + output + "</li>");
+      outputArray.push($("<li/>").text(output).html());
     } else if (i % 5 === 0) {
       output = pingPongs[1]
-      outputArray.push("<li>" + output + "</li>");
+      outputArray.push($("<li/>").text(output).html());
     } else if (i % 3 === 0) {
       output = pingPongs[0];
-      outputArray.push("<li>" + output + "</li>");
+      outputArray.push($("<li/>").text(output).html());
     } else {
-      outputArray.push("<li>" + i + "</li>");
+      outputArray.push($("<li/>").text(i).html());
     };
   };
   return outputArray;
