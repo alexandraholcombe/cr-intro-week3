@@ -1,7 +1,30 @@
+body {
+
+}
+
 .container {
   width: 80%;
 }
 
 #play {
   display: none;
+  border: 2px solid red;
+  text-align: center;
 }
+
+.intro-splash {
+  border: 2px solid blue;
+  text-align: center;
+}
+
+/*#outputBox {
+  text-align: center;
+}
+
+#outputBox ul {
+  display: inline-table;
+}
+
+#outputBox li {
+  display: inline;
+}*/

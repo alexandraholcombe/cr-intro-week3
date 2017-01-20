@@ -9,6 +9,8 @@ var getStarted = function(){
 };
 
 var pingPonger = function(input) {
+  $("#output").empty();
+  outputItems = [];
   var output = 0;
   for (var i = 1; i <= input; i++) {
     if (i % 15 === 0) {
@@ -37,7 +39,9 @@ $(function(){
 
   $("form").submit(function(event) {
     event.preventDefault();
+    // $("ul li").remove();
+    // $("ul").empty();
     userInput = parseInt($("#user-input").val());
-    $("#output").append(pingPonger(userInput));
+    $("#output").text(pingPonger(userInput));
   });
 });
