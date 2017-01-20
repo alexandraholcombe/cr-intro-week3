@@ -27,7 +27,15 @@ var pingPonger = function(input) {
     };
   };
   $.each(outputItems, function(i, val){
-    $("<li>").text(val).appendTo("#output");
+    if (val === "pong") {
+      $("<li>").text(val).addClass("ping-pong").appendTo("#output");
+    } else if (val === "ping"){
+      $("<li>").text(val).addClass("ping-pong").appendTo("#output");
+    } else if (val === "ping-pong"){
+      $("<li>").text(val).addClass("ping-pong").appendTo("#output");
+    } else {
+      $("<li>").text(val).appendTo("#output");
+    };
   })
 };
 
@@ -39,8 +47,6 @@ $(function(){
 
   $("form").submit(function(event) {
     event.preventDefault();
-    // $("ul li").remove();
-    // $("ul").empty();
     userInput = parseInt($("#user-input").val());
     $("#output").text(pingPonger(userInput));
   });

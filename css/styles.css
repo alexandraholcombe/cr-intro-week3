@@ -51,8 +51,10 @@ button:hover {
   font-size: 16px;
   text-align: center;
   list-style: none;
-  /*border: 2px red solid;*/
-  /*display: inline-block;*/
   padding-right: 40px;
   margin: -30px auto;
+}
+
+.ping-pong {
+  color: red;
 }
