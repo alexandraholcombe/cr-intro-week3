@@ -1,5 +1,6 @@
 //Business Logicus
 var userInput;
+var output;
 var outputArray = [];
 var pingPongs = ["ping", "pong", "ping-pong"]
 
@@ -8,12 +9,16 @@ var pingPonger = function(input) {
   for (var i = 1; i <= input; i++) {
     if (i % 15 === 0) {
       output = output + pingPongs[2]
+      outputArray.push(output);
     } else if (i % 5 === 0) {
       output = output + pingPongs[1]
+      outputArray.push(output);
     } else if (i % 3 === 0) {
       output = output + pingPongs[0];
+      outputArray.push(output);
     } else {
       output = output + i + ", "
+      outputArray.push(output);
     };
   };
   return output;
