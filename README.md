@@ -17,6 +17,32 @@ This web application will take a number from a user and return a range of number
 * Open files in web browser or text editor
 * JQuery and Bootstrap included, no internet connection required
 
+## Specifications
+
+**The application will only accept numerical user input.**
+* Example Input: Hello!
+* Example Output:
+
+**The application will take a user input of "1" and print it to the page.**
+* Example Input: 1
+* Example Output: [1]
+
+**The application will count up to the user-provided number.**
+* Example Input: 2
+* Example Output: [1, 2]
+
+**The application will return all numbers divisible by 3 as "ping."**
+* Example Input: 4
+* Example Output: [1, 2, ping, 4]
+
+**The application will return all numbers divisible by 5 as "pong."**
+* Example Input: 6
+* Example Output: [1, 2, ping, 4, pong, ping]
+
+**The application will return all numbers divisible by 15 as "ping-pong."**
+* Example Input: 15
+* Example Output: [1, 2, ping, 4, pong, ping, 7, 8, ping, pong, 11, ping, 13, 14, ping-pong]
+
 ## Known Bugs
 
 *
