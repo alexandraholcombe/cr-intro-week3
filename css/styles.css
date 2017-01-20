@@ -1,5 +1,24 @@
-body {
+@font-face {
+  font-family: 'Ostrich Sans Inline';
+  src: url('../resources/ostrich-sans-inline-regular.eot'); /* IE9 Compat Modes */
+  src: url('../resources/ostrich-sans-inline-regular?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('..//resources/ostrich-sans-inline-regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('../resources/ostrich-sans-inline-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('../resources/ostrich-sans-inline-regular.svg#ostrich-sans-inline-regular') format('svg'); /* Legacy iOS */
+}
 
+body {
+  font-family: "Overpass", sans-serif;
+  text-transform: lowercase;
+}
+
+h1 {
+  font-family: "Ostrich Sans Inline", "Arial", sans-serif;
+  font-size: 140px;
+}
+
+button {
+  text-transform: lowercase;
 }
 
 .container {
