@@ -2,10 +2,6 @@
   width: 80%;
 }
 
-.jumbotron {
-
-}
-
-.container .jumbotron {
-  border-radius: 0px;
+#play {
+  display: none;
 }

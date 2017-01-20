@@ -3,6 +3,11 @@ var userInput;
 var outputItems = [];
 var pingPongs = ["ping", "pong", "ping-pong"]
 
+var getStarted = function(){
+  $(".intro-splash").fadeOut();
+  $("#play").delay(400).fadeIn();
+};
+
 var pingPonger = function(input) {
   var output = 0;
   for (var i = 1; i <= input; i++) {
@@ -26,6 +31,10 @@ var pingPonger = function(input) {
 
 //User Interface Logicus
 $(function(){
+  $("#btn-started").click(function() {
+    getStarted();
+  });
+
   $("form").submit(function(event) {
     event.preventDefault();
     userInput = parseInt($("#user-input").val());
