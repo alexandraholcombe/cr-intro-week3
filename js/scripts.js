@@ -1,7 +1,8 @@
 //Business Logicus
 var userInput;
 var output;
-var outputArray = [];
+var outputItems = [];
+var domList = $("#output")
 var pingPongs = ["ping", "pong", "ping-pong"]
 
 var pingPonger = function(input) {
@@ -10,19 +11,24 @@ var pingPonger = function(input) {
     if (i % 15 === 0) {
       output = pingPongs[2]
       // outputArray.push("<li>" + output + "</li>");
-      outputArray.push($("<li/>").text(output).html());
+      outputItems.push($("<li/>").text(output).html());
     } else if (i % 5 === 0) {
       output = pingPongs[1]
-      outputArray.push($("<li/>").text(output).html());
+      outputItems.push($("<li/>").text(output).html());
     } else if (i % 3 === 0) {
       output = pingPongs[0];
-      outputArray.push($("<li/>").text(output).html());
+      outputItems.push($("<li/>").text(output).html());
     } else {
-      outputArray.push($("<li/>").text(i).html());
+      outputItems.push(i);
     };
   };
-  return outputArray;
+  $.each(outputItems, function(i, val){
+    $("<li>").text(val).appendTo("#output");
+    // $("#output").append("<li>" + val + "</li>");
+  })
 };
+
+
 
 //User Interface Logicus
 $(function(){
