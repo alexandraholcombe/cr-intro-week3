@@ -11,6 +11,8 @@ This web application will take a number from a user and return a range of number
 * Numbers divisible by 5 are replaced with "pong"
 * Numbers divisible by 15 are replaced with "ping-pong"
 
+View this project on [GitHub Pages](https://alexandraholcombe.github.io/cr-intro-week3/)
+
 ## Setup/Installation Requirements
 
 * Clone to local machine
