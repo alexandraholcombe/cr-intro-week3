@@ -2,14 +2,15 @@
   font-family: 'Ostrich Sans Inline';
   src: url('../resources/ostrich-sans-inline-regular.eot'); /* IE9 Compat Modes */
   src: url('../resources/ostrich-sans-inline-regular?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('..//resources/ostrich-sans-inline-regular.woff') format('woff'), /* Pretty Modern Browsers */
-       url('../resources/ostrich-sans-inline-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('../resources/ostrich-sans-inline-regular.svg#ostrich-sans-inline-regular') format('svg'); /* Legacy iOS */
+  url('..//resources/ostrich-sans-inline-regular.woff') format('woff'), /* Pretty Modern Browsers */
+  url('../resources/ostrich-sans-inline-regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+  url('../resources/ostrich-sans-inline-regular.svg#ostrich-sans-inline-regular') format('svg'); /* Legacy iOS */
 }
 
 body {
   font-family: "Overpass", sans-serif;
   text-transform: lowercase;
+  font-size: 24px;
 }
 
 h1 {
@@ -17,33 +18,41 @@ h1 {
   font-size: 140px;
 }
 
-button {
-  text-transform: lowercase;
-}
-
 .container {
   width: 80%;
 }
 
+.intro-splash {
+  text-align: center;
+  width: 60%;
+  margin: auto;
+}
+
 #play {
   display: none;
-  border: 2px solid red;
   text-align: center;
+  width: 60%;
+  margin: 10% auto;
 }
 
-.intro-splash {
-  border: 2px solid blue;
+button {
+  text-transform: lowercase;
+}
+
+button:hover {
+  background-color: black;
+}
+
+.white-text:hover {
+  color: white;
+}
+
+#output {
+  font-size: 16px;
   text-align: center;
+  list-style: none;
+  /*border: 2px red solid;*/
+  /*display: inline-block;*/
+  padding-right: 40px;
+  margin: -30px auto;
 }
-
-/*#outputBox {
-  text-align: center;
-}
-
-#outputBox ul {
-  display: inline-table;
-}
-
-#outputBox li {
-  display: inline;
-}*/
