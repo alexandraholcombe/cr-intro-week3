@@ -43,10 +43,6 @@ This web application will take a number from a user and return a range of number
 * Example Input: 15
 * Example Output: [1, 2, ping, 4, pong, ping, 7, 8, ping, pong, 11, ping, 13, 14, ping-pong]
 
-## Known Bugs
-
-*
-
 ## Support and contact details
 
 Please contact Allie Holcombe at alexandra.holcombe@gmail.com with any questions, concerns, or suggestions.
